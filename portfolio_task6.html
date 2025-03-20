@@ -7527,16 +7527,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2><p>This report presents a conjoint analysis study to determine consumer preferences for a new mobile phone.</p>
-<p>By evaluating key product attributes such as price, battery life, number of cameras, and storage capacity, we aim to identify the features that influence purchasing decisions.</p>
-<p>Ten respondents ranked different phone configurations, and the data was analysed using linear regression to calculate utility values for each attribute level. The results provide insights into consumer priorities and highlight areas for potential product improvement.</p>
-<h2 id="Tasks">Tasks<a class="anchor-link" href="#Tasks">¶</a></h2><p>Carry out a conjoint analysis study for the launch of a new mobile phone:</p>
-<ul>
-<li>Identify at least four different factors with a minimum of two levels per factor (one or two of them should preferably have three or four levels each).</li>
-<li>Create all different combinations of products and ask 10 of family member, friends or colleagues to rank them according to their preference with one being the most sought-after product. Perform conjoint analysis using linear regression and calculate the utilities as well as identify levels where further work is needed.</li>
-<li>Produce a short report (i.e. two to three pages) outlining the steps of the conjoint analysis study.</li>
-<li>Present the overall utilities for each product as well as present and comment in areas where consumers' preferences change.</li>
-</ul>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2><p>This report presents a conjoint analysis study to determine consumer preferences for a new mobile phone. By evaluating key product attributes such as price, battery life, number of cameras, and storage capacity, we aim to identify the features that influence purchasing decisions.</p>
 <h2 id="Key-Findings">Key Findings<a class="anchor-link" href="#Key-Findings">¶</a></h2><p><strong>Price:</strong></p>
 <ul>
 <li>The most important attribute of the new phone that affects customer's puchasing decision is <code>Price</code>.</li>
@@ -7584,6 +7575,13 @@ a.anchor-link {
 <li>The <strong>Pro</strong> model aims to cater to customers seeking more larger phones, only offering 256 GB and 512 GB storage options.</li>
 <li>Both versions include 3 cameras, a feature that the analysis indicates moderate customer's preference.</li>
 </ul>
+<h2 id="Tasks">Tasks<a class="anchor-link" href="#Tasks">¶</a></h2><p>Carry out a conjoint analysis study for the launch of a new mobile phone:</p>
+<ul>
+<li>Identify at least four different factors with a minimum of two levels per factor (one or two of them should preferably have three or four levels each).</li>
+<li>Create all different combinations of products and ask 10 of family member, friends or colleagues to rank them according to their preference with one being the most sought-after product. Perform conjoint analysis using linear regression and calculate the utilities as well as identify levels where further work is needed.</li>
+<li>Produce a short report (i.e. two to three pages) outlining the steps of the conjoint analysis study.</li>
+<li>Present the overall utilities for each product as well as present and comment in areas where consumers' preferences change.</li>
+</ul>
 <h2 id="The-Project-Directory">The Project Directory<a class="anchor-link" href="#The-Project-Directory">¶</a></h2><p>The Portfolio 6 Project files can be found in the Github Repository: <a href="https://github.com/lamtong/portfolio6_cojoint_analysis">github.com/lamtong/portfolio6_cojoint_analysis</a></p>
 </div>
 </div>
@@ -7604,7 +7602,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Import packages</span>
@@ -7655,12 +7653,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Product Attributes</span>
@@ -7677,385 +7675,7 @@ a.anchor-link {
 
 <span class="c1"># Export the Product Combination data for Customer Survey</span>
 <span class="n">df_prod</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'product.csv'</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
-
-<span class="c1"># The Product Combination DataFrame</span>
-<span class="n">df_prod</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>display_inch</th>
-<th>camera</th>
-<th>memory_gb</th>
-<th>price_gbp</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>399</td>
-</tr>
-<tr>
-<th>1</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>599</td>
-</tr>
-<tr>
-<th>2</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>799</td>
-</tr>
-<tr>
-<th>3</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>999</td>
-</tr>
-<tr>
-<th>4</th>
-<td>5.5</td>
-<td>2</td>
-<td>256</td>
-<td>399</td>
-</tr>
-<tr>
-<th>5</th>
-<td>5.5</td>
-<td>2</td>
-<td>256</td>
-<td>599</td>
-</tr>
-<tr>
-<th>6</th>
-<td>5.5</td>
-<td>2</td>
-<td>256</td>
-<td>799</td>
-</tr>
-<tr>
-<th>7</th>
-<td>5.5</td>
-<td>2</td>
-<td>256</td>
-<td>999</td>
-</tr>
-<tr>
-<th>8</th>
-<td>5.5</td>
-<td>2</td>
-<td>512</td>
-<td>399</td>
-</tr>
-<tr>
-<th>9</th>
-<td>5.5</td>
-<td>2</td>
-<td>512</td>
-<td>599</td>
-</tr>
-<tr>
-<th>10</th>
-<td>5.5</td>
-<td>2</td>
-<td>512</td>
-<td>799</td>
-</tr>
-<tr>
-<th>11</th>
-<td>5.5</td>
-<td>2</td>
-<td>512</td>
-<td>999</td>
-</tr>
-<tr>
-<th>12</th>
-<td>5.5</td>
-<td>3</td>
-<td>128</td>
-<td>399</td>
-</tr>
-<tr>
-<th>13</th>
-<td>5.5</td>
-<td>3</td>
-<td>128</td>
-<td>599</td>
-</tr>
-<tr>
-<th>14</th>
-<td>5.5</td>
-<td>3</td>
-<td>128</td>
-<td>799</td>
-</tr>
-<tr>
-<th>15</th>
-<td>5.5</td>
-<td>3</td>
-<td>128</td>
-<td>999</td>
-</tr>
-<tr>
-<th>16</th>
-<td>5.5</td>
-<td>3</td>
-<td>256</td>
-<td>399</td>
-</tr>
-<tr>
-<th>17</th>
-<td>5.5</td>
-<td>3</td>
-<td>256</td>
-<td>599</td>
-</tr>
-<tr>
-<th>18</th>
-<td>5.5</td>
-<td>3</td>
-<td>256</td>
-<td>799</td>
-</tr>
-<tr>
-<th>19</th>
-<td>5.5</td>
-<td>3</td>
-<td>256</td>
-<td>999</td>
-</tr>
-<tr>
-<th>20</th>
-<td>5.5</td>
-<td>3</td>
-<td>512</td>
-<td>399</td>
-</tr>
-<tr>
-<th>21</th>
-<td>5.5</td>
-<td>3</td>
-<td>512</td>
-<td>599</td>
-</tr>
-<tr>
-<th>22</th>
-<td>5.5</td>
-<td>3</td>
-<td>512</td>
-<td>799</td>
-</tr>
-<tr>
-<th>23</th>
-<td>5.5</td>
-<td>3</td>
-<td>512</td>
-<td>999</td>
-</tr>
-<tr>
-<th>24</th>
-<td>6.1</td>
-<td>2</td>
-<td>128</td>
-<td>399</td>
-</tr>
-<tr>
-<th>25</th>
-<td>6.1</td>
-<td>2</td>
-<td>128</td>
-<td>599</td>
-</tr>
-<tr>
-<th>26</th>
-<td>6.1</td>
-<td>2</td>
-<td>128</td>
-<td>799</td>
-</tr>
-<tr>
-<th>27</th>
-<td>6.1</td>
-<td>2</td>
-<td>128</td>
-<td>999</td>
-</tr>
-<tr>
-<th>28</th>
-<td>6.1</td>
-<td>2</td>
-<td>256</td>
-<td>399</td>
-</tr>
-<tr>
-<th>29</th>
-<td>6.1</td>
-<td>2</td>
-<td>256</td>
-<td>599</td>
-</tr>
-<tr>
-<th>30</th>
-<td>6.1</td>
-<td>2</td>
-<td>256</td>
-<td>799</td>
-</tr>
-<tr>
-<th>31</th>
-<td>6.1</td>
-<td>2</td>
-<td>256</td>
-<td>999</td>
-</tr>
-<tr>
-<th>32</th>
-<td>6.1</td>
-<td>2</td>
-<td>512</td>
-<td>399</td>
-</tr>
-<tr>
-<th>33</th>
-<td>6.1</td>
-<td>2</td>
-<td>512</td>
-<td>599</td>
-</tr>
-<tr>
-<th>34</th>
-<td>6.1</td>
-<td>2</td>
-<td>512</td>
-<td>799</td>
-</tr>
-<tr>
-<th>35</th>
-<td>6.1</td>
-<td>2</td>
-<td>512</td>
-<td>999</td>
-</tr>
-<tr>
-<th>36</th>
-<td>6.1</td>
-<td>3</td>
-<td>128</td>
-<td>399</td>
-</tr>
-<tr>
-<th>37</th>
-<td>6.1</td>
-<td>3</td>
-<td>128</td>
-<td>599</td>
-</tr>
-<tr>
-<th>38</th>
-<td>6.1</td>
-<td>3</td>
-<td>128</td>
-<td>799</td>
-</tr>
-<tr>
-<th>39</th>
-<td>6.1</td>
-<td>3</td>
-<td>128</td>
-<td>999</td>
-</tr>
-<tr>
-<th>40</th>
-<td>6.1</td>
-<td>3</td>
-<td>256</td>
-<td>399</td>
-</tr>
-<tr>
-<th>41</th>
-<td>6.1</td>
-<td>3</td>
-<td>256</td>
-<td>599</td>
-</tr>
-<tr>
-<th>42</th>
-<td>6.1</td>
-<td>3</td>
-<td>256</td>
-<td>799</td>
-</tr>
-<tr>
-<th>43</th>
-<td>6.1</td>
-<td>3</td>
-<td>256</td>
-<td>999</td>
-</tr>
-<tr>
-<th>44</th>
-<td>6.1</td>
-<td>3</td>
-<td>512</td>
-<td>399</td>
-</tr>
-<tr>
-<th>45</th>
-<td>6.1</td>
-<td>3</td>
-<td>512</td>
-<td>599</td>
-</tr>
-<tr>
-<th>46</th>
-<td>6.1</td>
-<td>3</td>
-<td>512</td>
-<td>799</td>
-</tr>
-<tr>
-<th>47</th>
-<td>6.1</td>
-<td>3</td>
-<td>512</td>
-<td>999</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>
@@ -8072,152 +7692,17 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># The Survey Result</span>
 <span class="n">df_survey</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'product_survey.csv'</span><span class="p">)</span>
-<span class="n">df_survey</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>display_inch</th>
-<th>camera</th>
-<th>memory_gb</th>
-<th>price_gbp</th>
-<th>respondent_1</th>
-<th>respondent_2</th>
-<th>respondent_3</th>
-<th>respondent_4</th>
-<th>respondent_5</th>
-<th>respondent_6</th>
-<th>respondent_7</th>
-<th>respondent_8</th>
-<th>respondent_9</th>
-<th>respondent_10</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>399</td>
-<td>15</td>
-<td>40</td>
-<td>38</td>
-<td>16</td>
-<td>21</td>
-<td>30</td>
-<td>25</td>
-<td>21</td>
-<td>15</td>
-<td>16</td>
-</tr>
-<tr>
-<th>1</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>599</td>
-<td>13</td>
-<td>24</td>
-<td>24</td>
-<td>17</td>
-<td>9</td>
-<td>14</td>
-<td>13</td>
-<td>3</td>
-<td>13</td>
-<td>18</td>
-</tr>
-<tr>
-<th>2</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>799</td>
-<td>1</td>
-<td>11</td>
-<td>11</td>
-<td>10</td>
-<td>2</td>
-<td>7</td>
-<td>6</td>
-<td>8</td>
-<td>4</td>
-<td>6</td>
-</tr>
-<tr>
-<th>3</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>999</td>
-<td>6</td>
-<td>1</td>
-<td>10</td>
-<td>1</td>
-<td>3</td>
-<td>1</td>
-<td>3</td>
-<td>1</td>
-<td>3</td>
-<td>4</td>
-</tr>
-<tr>
-<th>4</th>
-<td>5.5</td>
-<td>2</td>
-<td>256</td>
-<td>399</td>
-<td>25</td>
-<td>42</td>
-<td>44</td>
-<td>29</td>
-<td>24</td>
-<td>32</td>
-<td>22</td>
-<td>22</td>
-<td>32</td>
-<td>26</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>
@@ -8234,12 +7719,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Ranking columns</span>
@@ -8253,88 +7738,7 @@ a.anchor-link {
 
 <span class="c1"># The Dataframe for The Analysis</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df_survey</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">:</span><span class="o">-</span><span class="mi">11</span><span class="p">]</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">df_survey</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>display_inch</th>
-<th>camera</th>
-<th>memory_gb</th>
-<th>price_gbp</th>
-<th>average_rank</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>399</td>
-<td>23</td>
-</tr>
-<tr>
-<th>1</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>599</td>
-<td>13</td>
-</tr>
-<tr>
-<th>2</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>799</td>
-<td>7</td>
-</tr>
-<tr>
-<th>3</th>
-<td>5.5</td>
-<td>2</td>
-<td>128</td>
-<td>999</td>
-<td>1</td>
-</tr>
-<tr>
-<th>4</th>
-<td>5.5</td>
-<td>2</td>
-<td>256</td>
-<td>399</td>
-<td>31</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>
@@ -8385,7 +7789,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># One-hot encoding</span>
@@ -8403,7 +7807,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8517,7 +7921,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Define independent and dependent variables</span>
@@ -8557,7 +7961,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Summary of the model</span>
@@ -8579,8 +7983,8 @@ a.anchor-link {
 Dep. Variable:                      y   R-squared (uncentered):                   0.969
 Model:                            OLS   Adj. R-squared (uncentered):              0.964
 Method:                 Least Squares   F-statistic:                              184.2
-Date:                Tue, 18 Mar 2025   Prob (F-statistic):                    6.82e-29
-Time:                        19:56:33   Log-Likelihood:                          15.404
+Date:                Wed, 19 Mar 2025   Prob (F-statistic):                    6.82e-29
+Time:                        22:19:37   Log-Likelihood:                          15.404
 No. Observations:                  48   AIC:                                     -16.81
 Df Residuals:                      41   BIC:                                     -3.710
 Df Model:                           7                                                  
@@ -8662,7 +8066,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate relative importance as percentage</span>
@@ -8760,7 +8164,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#  ==== Utility of each feature ===</span>
@@ -8824,7 +8228,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Differences</span>
@@ -8840,7 +8244,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Display Sizes</span>
@@ -8855,7 +8259,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8907,7 +8311,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Memory</span>
@@ -8922,7 +8326,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8979,7 +8383,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Number of Cameras</span>
@@ -8994,7 +8398,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9046,7 +8450,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Price</span>
@@ -9061,7 +8465,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9144,7 +8548,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create MultiIndex for rows (camera, price_gbp)</span>
@@ -9184,7 +8588,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9332,7 +8736,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Cast the keys to numeric</span>
@@ -9378,7 +8782,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9526,7 +8930,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Reset the column index to simple numeric values</span>
@@ -9564,7 +8968,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9902,7 +9306,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Correlation between Rank and Ultility</span>
@@ -9943,7 +9347,7 @@ $$\text{Predicted Preference} = 0.08 \cdot X_1 + 0.22 \cdot  X_2 + 0.22 \cdot  X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create 2x2 subplots</span>
