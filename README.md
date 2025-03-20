@@ -1,6 +1,6 @@
 # Conjoint Analysis for the Launch of a New Mobile Phone
 
-Refer to [portfolio_task4.ipynb](./portfolio_task4.ipynb) or [portfolio_task4.html](./portfolio_task4.html) for a detailed report of the analysis.
+Refer to [portfolio_task6.ipynb](./portfolio_task6.ipynb) or [portfolio_task6.html](./portfolio_task6.html) for a detailed report of the analysis.
 
 ## Introduction
 
