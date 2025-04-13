@@ -1,5 +1,7 @@
 # Conjoint Analysis for the Launch of a New Mobile Phone
 
+*Tools Used: Python (Jupiter Notebook)*
+
 Refer to [portfolio_task6.ipynb](./portfolio_task6.ipynb) or [portfolio_task6.html](./portfolio_task6.html) for a detailed report of the analysis.
 
 ## Introduction
